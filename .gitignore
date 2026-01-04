@@ -1,0 +1,26 @@
+# Ignorar entornos virtuales
+venv/
+.env/
+# Ignorar archivos de dependencias
+node_modules/
+dist/
+build/
+# Ignorar archivos de logs
+*.log
+# Ignorar archivos temporales
+*.tmp
+*.swp
+
+# Ignorar archivos de configuración locales
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Ignorar configuraciones de IDE
+.vscode/
+.idea/
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
