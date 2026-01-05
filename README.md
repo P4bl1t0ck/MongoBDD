@@ -62,30 +62,30 @@ pip install -r requirements.txt
 
 ### 3. Configurar Conexión a MongoDB
 
-El string de conexión ya está configurado en el archivo:
+El string de conexión está configurado en:
 ```
 Backend/app_catequesis.py
 ```
 
-String de conexión actual:
-```python
-MONGO_URI = "mongodb+srv://AdminUdla:UDLA@clusterpablutus.hneadkh.mongodb.net/"
-```
-
 ### 4. Ejecutar el Servidor
 
+**Windows:**
 ```bash
 cd Backend
 python app_catequesis.py
 ```
 
-El servidor se iniciará en: `http://localhost:5000`
+**macOS/Linux:**
+```bash
+cd Backend
+python3 app_catequesis.py
+```
 
 ### 5. Acceder a la Aplicación
 
 Abre tu navegador y ve a:
 ```
-http://localhost:5000
+http://localhost:5001
 ```
 
 ## 📁 Estructura del Proyecto
