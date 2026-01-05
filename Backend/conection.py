@@ -5,7 +5,7 @@ from typing import List, Dict, Optional, Any
 
 class ConexionMongoDB:
     """
-    Clase para manejar todas las operaciones CRUD con MongoDB. de CatequesisDB
+    Clase para manejar todas las operaciones CRUD con MongoDB.
     """
     
     def __init__(self, connection_string: str, database_name: str = "CatequesisDB"):

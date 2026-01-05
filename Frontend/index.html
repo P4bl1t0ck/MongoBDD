@@ -1,1 +1,541 @@
-<>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Catequesis - CatequesisDB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <h1>📖 Sistema de Gestión de Catequesis</h1>
+            <p>CatequesisDB - Administración Integral</p>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="nav-tabs">
+        <div class="container">
+            <button class="tab-button active" onclick="mostrarSeccion('dashboard')">
+                📊 Dashboard
+            </button>
+            <button class="tab-button" onclick="mostrarSeccion('parroquias')">
+                ⛪ Parroquias
+            </button>
+            <button class="tab-button" onclick="mostrarSeccion('catequistas')">
+                👥 Catequistas
+            </button>
+            <button class="tab-button" onclick="mostrarSeccion('grupos')">
+                📚 Grupos
+            </button>
+            <button class="tab-button" onclick="mostrarSeccion('catequizandos')">
+                👦 Catequizandos
+            </button>
+            <button class="tab-button" onclick="mostrarSeccion('reportes')">
+                📈 Reportes
+            </button>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="container main-content">
+        
+        <!-- DASHBOARD -->
+        <section id="dashboard" class="section active">
+            <h2>📊 Dashboard General</h2>
+            
+            <div class="stats-grid" id="statsGrid">
+                <div class="stat-card">
+                    <div class="stat-icon">⛪</div>
+                    <div class="stat-info">
+                        <h3 id="totalParroquias">0</h3>
+                        <p>Parroquias</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3 id="totalCatequistas">0</h3>
+                        <p>Catequistas</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-info">
+                        <h3 id="totalGrupos">0</h3>
+                        <p>Grupos</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👦</div>
+                    <div class="stat-info">
+                        <h3 id="totalCatequizandos">0</h3>
+                        <p>Catequizandos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🎯 Acciones Rápidas</h3>
+                <div class="quick-actions">
+                    <button class="btn btn-primary" onclick="mostrarSeccion('catequizandos'); document.getElementById('formCatequizando').scrollIntoView();">
+                        ➕ Registrar Catequizando
+                    </button>
+                    <button class="btn btn-secondary" onclick="mostrarSeccion('grupos');">
+                        📚 Ver Grupos
+                    </button>
+                    <button class="btn btn-secondary" onclick="mostrarSeccion('reportes');">
+                        📈 Ver Reportes
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARROQUIAS -->
+        <section id="parroquias" class="section">
+            <h2>⛪ Gestión de Parroquias</h2>
+            
+            <div class="card">
+                <h3>➕ Registrar Nueva Parroquia</h3>
+                <form id="formParroquia" class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nombre de la Parroquia *</label>
+                            <input type="text" id="parroquiaNombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Nombre de la Vicaría *</label>
+                            <input type="text" id="parroquiaVicaria" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Dirección</label>
+                            <input type="text" id="parroquiaDireccion">
+                        </div>
+                        <div class="form-group">
+                            <label>Ciudad</label>
+                            <input type="text" id="parroquiaCiudad">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Teléfono *</label>
+                            <input type="tel" id="parroquiaTelefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Correo</label>
+                            <input type="email" id="parroquiaCorreo">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nombre del Párroco</label>
+                            <input type="text" id="parroquiaParroco">
+                        </div>
+                        <div class="form-group">
+                            <label>Capacidad de Catequesis</label>
+                            <input type="number" id="parroquiaCapacidad" value="100">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">💾 Guardar Parroquia</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>📋 Lista de Parroquias</h3>
+                <button class="btn btn-secondary" onclick="cargarParroquias()">🔄 Actualizar Lista</button>
+                <div class="table-container">
+                    <table id="tablaParroquias">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Vicaría</th>
+                                <th>Ciudad</th>
+                                <th>Teléfono</th>
+                                <th>Párroco</th>
+                                <th>Capacidad</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cuerpoTablaParroquias">
+                            <tr><td colspan="7" class="loading">Cargando...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEQUISTAS -->
+        <section id="catequistas" class="section">
+            <h2>👥 Gestión de Catequistas</h2>
+            
+            <div class="card">
+                <h3>➕ Registrar Nuevo Catequista</h3>
+                <form id="formCatequista" class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nombre *</label>
+                            <input type="text" id="catequistaNombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Apellido *</label>
+                            <input type="text" id="catequistaApellido" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Cédula</label>
+                            <input type="text" id="catequistaCedula">
+                        </div>
+                        <div class="form-group">
+                            <label>Edad *</label>
+                            <input type="number" id="catequistaEdad" required min="18">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Teléfono *</label>
+                            <input type="tel" id="catequistaTelefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Correo *</label>
+                            <input type="email" id="catequistaCorreo" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Parroquia *</label>
+                            <select id="catequistaParroquia" required>
+                                <option value="">Seleccionar parroquia...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Especialidad</label>
+                            <select id="catequistaEspecialidad">
+                                <option value="">Seleccionar...</option>
+                                <option value="Primera Comunión">Primera Comunión</option>
+                                <option value="Confirmación">Confirmación</option>
+                                <option value="Bautismo">Bautismo</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Dirección</label>
+                        <input type="text" id="catequistaDireccion">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">💾 Guardar Catequista</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>📋 Lista de Catequistas</h3>
+                <button class="btn btn-secondary" onclick="cargarCatequistas()">🔄 Actualizar Lista</button>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre Completo</th>
+                                <th>Cédula</th>
+                                <th>Teléfono</th>
+                                <th>Correo</th>
+                                <th>Especialidad</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cuerpoCatequistas">
+                            <tr><td colspan="6" class="loading">Cargando...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRUPOS -->
+        <section id="grupos" class="section">
+            <h2>📚 Gestión de Grupos</h2>
+            
+            <div class="card">
+                <h3>➕ Crear Nuevo Grupo</h3>
+                <form id="formGrupo" class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Número de Grupo *</label>
+                            <input type="number" id="grupoNumero" required min="1">
+                        </div>
+                        <div class="form-group">
+                            <label>Sacramento *</label>
+                            <select id="grupoSacramento" required>
+                                <option value="">Seleccionar...</option>
+                                <option value="Primera Comunión">Primera Comunión</option>
+                                <option value="Confirmación">Confirmación</option>
+                                <option value="Bautismo">Bautismo</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Parroquia *</label>
+                            <select id="grupoParroquia" required>
+                                <option value="">Seleccionar parroquia...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Catequista *</label>
+                            <select id="grupoCatequista" required>
+                                <option value="">Seleccionar catequista...</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nivel</label>
+                            <input type="text" id="grupoNivel" placeholder="Ej: Nivel 1">
+                        </div>
+                        <div class="form-group">
+                            <label>Horario</label>
+                            <input type="text" id="grupoHorario" placeholder="Ej: Sábados 9:00 AM">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Aula</label>
+                            <input type="text" id="grupoAula">
+                        </div>
+                        <div class="form-group">
+                            <label>Cupo Máximo</label>
+                            <input type="number" id="grupoCupo" value="30" min="1">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Año Lectivo</label>
+                        <input type="text" id="grupoAño" placeholder="Ej: 2025-2026">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">💾 Guardar Grupo</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>📋 Lista de Grupos</h3>
+                <button class="btn btn-secondary" onclick="cargarGrupos()">🔄 Actualizar Lista</button>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>N° Grupo</th>
+                                <th>Sacramento</th>
+                                <th>Nivel</th>
+                                <th>Horario</th>
+                                <th>Estudiantes</th>
+                                <th>Cupos Disp.</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cuerpoGrupos">
+                            <tr><td colspan="7" class="loading">Cargando...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEQUIZANDOS -->
+        <section id="catequizandos" class="section">
+            <h2>👦 Gestión de Catequizandos</h2>
+            
+            <div class="card">
+                <h3>➕ Registrar Nuevo Catequizando</h3>
+                <form id="formCatequizando" class="form">
+                    <h4>📝 Datos Personales</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nombre *</label>
+                            <input type="text" id="catequizandoNombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Apellido *</label>
+                            <input type="text" id="catequizandoApellido" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Cédula</label>
+                            <input type="text" id="catequizandoCedula">
+                        </div>
+                        <div class="form-group">
+                            <label>Fecha de Nacimiento *</label>
+                            <input type="date" id="catequizandoFechaNac" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Teléfono *</label>
+                            <input type="tel" id="catequizandoTelefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Correo *</label>
+                            <input type="email" id="catequizandoCorreo" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Dirección</label>
+                        <input type="text" id="catequizandoDireccion">
+                    </div>
+                    
+                    <h4>👨‍👩‍👦 Datos de los Padres</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nombre del Padre</label>
+                            <input type="text" id="catequizandoPadre">
+                        </div>
+                        <div class="form-group">
+                            <label>Nombre de la Madre</label>
+                            <input type="text" id="catequizandoMadre">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Teléfono de Padres</label>
+                        <input type="tel" id="catequizandoTelPadres">
+                    </div>
+                    
+                    <h4>🙏 Datos de Padrinos</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nombre del Padrino</label>
+                            <input type="text" id="catequizandoPadrino">
+                        </div>
+                        <div class="form-group">
+                            <label>Nombre de la Madrina</label>
+                            <input type="text" id="catequizandoMadrina">
+                        </div>
+                    </div>
+                    
+                    <h4>📚 Datos de Catequesis</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Parroquia *</label>
+                            <select id="catequizandoParroquia" required onchange="cargarGruposPorParroquia(this.value, 'catequizandoGrupo')">
+                                <option value="">Seleccionar parroquia...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Grupo *</label>
+                            <select id="catequizandoGrupo" required>
+                                <option value="">Primero seleccione parroquia...</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Nivel *</label>
+                        <input type="text" id="catequizandoNivel" required placeholder="Ej: Nivel 1">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">💾 Registrar Catequizando</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>📋 Lista de Catequizandos</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Filtrar por Grupo:</label>
+                        <select id="filtroGrupo" onchange="filtrarCatequizandos()">
+                            <option value="">Todos los grupos</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-secondary" onclick="cargarCatequizandos()">🔄 Actualizar Lista</button>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre Completo</th>
+                                <th>Edad</th>
+                                <th>Teléfono</th>
+                                <th>Nivel</th>
+                                <th>Padres</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cuerpoCatequizandos">
+                            <tr><td colspan="6" class="loading">Cargando...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- REPORTES -->
+        <section id="reportes" class="section">
+            <h2>📈 Reportes y Consultas</h2>
+            
+            <div class="card">
+                <h3>📊 Estadísticas Generales</h3>
+                <div id="estadisticasDetalladas" class="stats-detail">
+                    <p>Cargando estadísticas...</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🎓 Catequizandos por Sacramento</h3>
+                <button class="btn btn-secondary" onclick="cargarReporteSacramentos()">🔄 Generar Reporte</button>
+                <div id="reporteSacramentos" class="report-container">
+                    <p>Haga clic en "Generar Reporte" para ver los datos</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🔍 Búsqueda Avanzada</h3>
+                <div class="form">
+                    <div class="form-group">
+                        <label>Buscar Catequizando por Nombre:</label>
+                        <input type="text" id="buscarNombre" placeholder="Escriba el nombre...">
+                        <button class="btn btn-primary" onclick="buscarCatequizando()">🔍 Buscar</button>
+                    </div>
+                    <div id="resultadoBusqueda"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sistema de Gestión de Catequesis - CatequesisDB</p>
+            <p>Desarrollado con Flask y MongoDB</p>
+        </div>
+    </footer>
+
+    <!-- MODAL PARA MENSAJES -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <p id="modalMensaje"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
