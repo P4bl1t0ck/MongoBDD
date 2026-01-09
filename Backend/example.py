@@ -1,13 +1,10 @@
-from pymongo import MongoClient
-from pymongo.errors import ServerSelectionTimeoutError, OperationFailure
+from conection import ConexionMongoDB
 from bson.objectid import ObjectId
-from typing import List, Dict, Optional, Any
-import test
 
 if __name__ == "__main__":
     # Configurar la conexión
     connection_string = "mongodb+srv://AdminUdla:UDLA@clusterpablutus.hneadkh.mongodb.net/?appName=ClusterPablutus"
-    db = ConexionMongoDB(connection_string)
+    db = ConexionMongoDB(connection_string, "CatequesisDB")
     
     # Listar colecciones
     print("\n📋 Colecciones disponibles:")

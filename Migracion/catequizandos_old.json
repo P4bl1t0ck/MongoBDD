@@ -1,0 +1,112 @@
+[
+  {
+    "ID_Catequizando": "CZO001",
+    "Nombre": "Mateo",
+    "Apellido": "López",
+    "Cedula": "1750123456",
+    "Fecha_Nacimiento": "2015-05-10",
+    "Telefono": "0991234567",
+    "Fecha_Registro": "2024-01-15",
+    "Observaciones": "Estudiante aplicado                                                                                                     ",
+    "FeBautismo_ID_Bautismo": "BAU001"
+  },
+  {
+    "ID_Catequizando": "CZO002",
+    "Nombre": "Valentina",
+    "Apellido": "García",
+    "Cedula": "1750123457",
+    "Fecha_Nacimiento": "2014-08-22",
+    "Telefono": "0991234568",
+    "Fecha_Registro": "2024-01-15",
+    "Observaciones": "Muy participativa                                                                                                       ",
+    "FeBautismo_ID_Bautismo": "BAU002"
+  },
+  {
+    "ID_Catequizando": "CZO003",
+    "Nombre": "Santiago",
+    "Apellido": "Hernández",
+    "Cedula": "1750123458",
+    "Fecha_Nacimiento": "2016-02-14",
+    "Telefono": "0991234569",
+    "Fecha_Registro": "2024-01-20",
+    "Observaciones": "Necesita refuerzo                                                                                                       ",
+    "FeBautismo_ID_Bautismo": "BAU003"
+  },
+  {
+    "ID_Catequizando": "CZO004",
+    "Nombre": "Isabella",
+    "Apellido": "Díaz",
+    "Cedula": "1750123459",
+    "Fecha_Nacimiento": "2015-11-30",
+    "Telefono": "0991234570",
+    "Fecha_Registro": "2024-01-20",
+    "Observaciones": "Excelente comportamiento                                                                                                ",
+    "FeBautismo_ID_Bautismo": "BAU004"
+  },
+  {
+    "ID_Catequizando": "CZO005",
+    "Nombre": "Sebastián",
+    "Apellido": "Torres",
+    "Cedula": "1750123460",
+    "Fecha_Nacimiento": "2014-12-18",
+    "Telefono": "0991234571",
+    "Fecha_Registro": "2024-01-25",
+    "Observaciones": "Regular asistencia                                                                                                      ",
+    "FeBautismo_ID_Bautismo": "BAU005"
+  },
+  {
+    "ID_Catequizando": "CZO006",
+    "Nombre": "Camila",
+    "Apellido": "Flores",
+    "Cedula": "1750123461",
+    "Fecha_Nacimiento": "2016-06-25",
+    "Telefono": "0991234572",
+    "Fecha_Registro": "2024-01-25",
+    "Observaciones": "Muy responsable                                                                                                         ",
+    "FeBautismo_ID_Bautismo": "BAU006"
+  },
+  {
+    "ID_Catequizando": "CZO007",
+    "Nombre": "Nicolás",
+    "Apellido": "Moreno",
+    "Cedula": "1750123462",
+    "Fecha_Nacimiento": "2015-09-08",
+    "Telefono": "0991234573",
+    "Fecha_Registro": "2024-02-01",
+    "Observaciones": "Buen estudiante                                                                                                         ",
+    "FeBautismo_ID_Bautismo": "BAU007"
+  },
+  {
+    "ID_Catequizando": "CZO008",
+    "Nombre": "Sofía",
+    "Apellido": "Castro",
+    "Cedula": "1750123463",
+    "Fecha_Nacimiento": "2014-03-12",
+    "Telefono": "0991234574",
+    "Fecha_Registro": "2024-02-01",
+    "Observaciones": "Excelente participación                                                                                                 ",
+    "FeBautismo_ID_Bautismo": "BAU008"
+  },
+  {
+    "ID_Catequizando": "CZO009",
+    "Nombre": "Lucas",
+    "Apellido": "Romero",
+    "Cedula": "1750123464",
+    "Fecha_Nacimiento": "2015-07-20",
+    "Telefono": "0991234575",
+    "Fecha_Registro": "2024-02-05",
+    "Observaciones": "Necesita motivación                                                                                                     ",
+    "FeBautismo_ID_Bautismo": "BAU001"
+  },
+  {
+    "ID_Catequizando": "CZO010",
+    "Nombre": "Emma",
+    "Apellido": "Vargas",
+    "Cedula": "1750123465",
+    "Fecha_Nacimiento": "2016-01-15",
+    "Telefono": "0991234576",
+    "Fecha_Registro": "2024-02-05",
+    "Observaciones": "Muy dedicada                                                                                                            ",
+    "FeBautismo_ID_Bautismo": "BAU002"
+  }
+]

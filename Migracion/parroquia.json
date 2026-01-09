@@ -1,0 +1,122 @@
+[
+  {
+    "_id": "PAR001",
+    "nombre": "San José",
+    "nombre_vicaria": "Vicaría Norte",
+    "ubicacion": {
+      "direccion": "Av. Principal 123",
+      "ciudad": "Quito",
+      "provincia": "Pichincha",
+      "coordenadas": {
+        "lat": -0.1865,
+        "lng": -78.4305
+      }
+    },
+    "telefono": "0987654321",
+    "parroco": "Padre Juan Pérez",
+    "correo": "sanjose@parroquia.ec",
+    "horarios_misa": ["Lunes a Viernes 7:00 AM", "Sábados 6:00 PM", "Domingos 8:00 AM, 10:00 AM, 12:00 PM"],
+    "servicios": ["Bautismo", "Primera Comunión", "Confirmación", "Matrimonio"],
+    "capacidad_catequesis": 200,
+    "activo": true,
+    "notas": "",
+    "fecha_creacion": "2026-01-09T01:30:28.943",
+    "fecha_actualizacion": "2026-01-09T01:30:28.943"
+  },
+  {
+    "_id": "PAR002",
+    "nombre": "Santa María",
+    "nombre_vicaria": "Vicaría Sur",
+    "ubicacion": {
+      "direccion": "Calle Flores 456",
+      "ciudad": "Quito",
+      "provincia": "Pichincha",
+      "coordenadas": {
+        "lat": -0.2500,
+        "lng": -78.5200
+      }
+    },
+    "telefono": "0987654322",
+    "parroco": "Padre Carlos Mendoza",
+    "correo": "santamaria@parroquia.ec",
+    "horarios_misa": ["Lunes a Viernes 6:30 AM", "Sábados 7:00 PM", "Domingos 9:00 AM, 11:00 AM"],
+    "servicios": ["Bautismo", "Primera Comunión", "Confirmación"],
+    "capacidad_catequesis": 200,
+    "activo": true,
+    "notas": "",
+    "fecha_creacion": "2026-01-09T01:30:28.943",
+    "fecha_actualizacion": "2026-01-09T01:30:28.943"
+  },
+  {
+    "_id": "PAR003",
+    "nombre": "El Sagrario",
+    "nombre_vicaria": "Vicaría Centro",
+    "ubicacion": {
+      "direccion": "Centro Histórico 789",
+      "ciudad": "Quito",
+      "provincia": "Pichincha",
+      "coordenadas": {
+        "lat": -0.2200,
+        "lng": -78.5100
+      }
+    },
+    "telefono": "0987654323",
+    "parroco": "Padre Miguel Ángel Torres",
+    "correo": "elsagrario@parroquia.ec",
+    "horarios_misa": ["Lunes a Viernes 7:00 AM, 12:00 PM", "Sábados 6:00 PM", "Domingos 7:00 AM, 9:00 AM, 11:00 AM, 5:00 PM"],
+    "servicios": ["Bautismo", "Primera Comunión", "Confirmación", "Matrimonio", "Unción de enfermos"],
+    "capacidad_catequesis": 200,
+    "activo": true,
+    "notas": "Catedral de la ciudad",
+    "fecha_creacion": "2026-01-09T01:30:28.943",
+    "fecha_actualizacion": "2026-01-09T01:30:28.943"
+  },
+  {
+    "_id": "PAR004",
+    "nombre": "La Inmaculada",
+    "nombre_vicaria": "Vicaría Este",
+    "ubicacion": {
+      "direccion": "Av. América 321",
+      "ciudad": "Quito",
+      "provincia": "Pichincha",
+      "coordenadas": {
+        "lat": -0.1900,
+        "lng": -78.4800
+      }
+    },
+    "telefono": "0987654324",
+    "parroco": "Padre Roberto Sánchez",
+    "correo": "lainmaculada@parroquia.ec",
+    "horarios_misa": ["Lunes a Viernes 6:00 AM", "Sábados 5:30 PM", "Domingos 8:30 AM, 10:30 AM"],
+    "servicios": ["Bautismo", "Primera Comunión", "Confirmación"],
+    "capacidad_catequesis": 200,
+    "activo": true,
+    "notas": "",
+    "fecha_creacion": "2026-01-09T01:30:28.943",
+    "fecha_actualizacion": "2026-01-09T01:30:28.943"
+  },
+  {
+    "_id": "PAR005",
+    "nombre": "San Francisco",
+    "nombre_vicaria": "Vicaría Oeste",
+    "ubicacion": {
+      "direccion": "Plaza Grande S/N",
+      "ciudad": "Quito",
+      "provincia": "Pichincha",
+      "coordenadas": {
+        "lat": -0.2190,
+        "lng": -78.5140
+      }
+    },
+    "telefono": "0987654325",
+    "parroco": "Padre Francisco González",
+    "correo": "sanfrancisco@parroquia.ec",
+    "horarios_misa": ["Lunes a Viernes 7:00 AM, 6:00 PM", "Sábados 7:00 PM", "Domingos 8:00 AM, 10:00 AM, 12:00 PM, 6:00 PM"],
+    "servicios": ["Bautismo", "Primera Comunión", "Confirmación", "Matrimonio"],
+    "capacidad_catequesis": 200,
+    "activo": true,
+    "notas": "Basílica menor",
+    "fecha_creacion": "2026-01-09T01:30:28.943",
+    "fecha_actualizacion": "2026-01-09T01:30:28.943"
+  }
+]

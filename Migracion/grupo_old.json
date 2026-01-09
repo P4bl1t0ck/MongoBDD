@@ -1,0 +1,42 @@
+[
+  {
+    "ID_Grupo": "GRP2024A",
+    "Ano": "2024-01-01",
+    "Horario": "2024-01-15T15:00:00",
+    "ID_Nivel": "NIV001",
+    "ID_Catequista": "CAT001",
+    "Parroquía_ID_Parroquin": "PAR001"
+  },
+  {
+    "ID_Grupo": "GRP2024B",
+    "Ano": "2024-01-01",
+    "Horario": "2024-01-15T17:00:00",
+    "ID_Nivel": "NIV002",
+    "ID_Catequista": "CAT002",
+    "Parroquía_ID_Parroquin": "PAR001"
+  },
+  {
+    "ID_Grupo": "GRP2024C",
+    "Ano": "2024-01-01",
+    "Horario": "2024-01-16T15:00:00",
+    "ID_Nivel": "NIV001",
+    "ID_Catequista": "CAT003",
+    "Parroquía_ID_Parroquin": "PAR002"
+  },
+  {
+    "ID_Grupo": "GRP2024D",
+    "Ano": "2024-01-01",
+    "Horario": "2024-01-16T17:00:00",
+    "ID_Nivel": "NIV002",
+    "ID_Catequista": "CAT004",
+    "Parroquía_ID_Parroquin": "PAR002"
+  },
+  {
+    "ID_Grupo": "GRP2024E",
+    "Ano": "2024-01-01",
+    "Horario": "2024-01-17T15:00:00",
+    "ID_Nivel": "NIV003",
+    "ID_Catequista": "CAT005",
+    "Parroquía_ID_Parroquin": "PAR003"
+  }
+]

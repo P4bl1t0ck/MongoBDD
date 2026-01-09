@@ -1,7 +1,7 @@
 import pymongo as pm
-from pymongo.errors import ServerSelectionTimeoutError, OperationFailure
+from pymongo.errors import ServerSelectionTimeoutError
 from bson.objectid import ObjectId
-from typing import List, Dict, Optional, Any
+from typing import List, Dict, Optional
 
 class ConexionMongoDB:
     """
@@ -119,10 +119,10 @@ class ConexionMongoDB:
             print(f" Error al buscar documentos: {e}")
             return []
     
-    def obtener_por_id(self, coleccion: str, id: str) -> Optional[Dict]:
+    def obtener_por_id(self, coleccion: str, doc_id: str) -> Optional[Dict]:
         #Obtiene un documento por su ID.
         try:
-            return self.db[coleccion].find_one({"_id": ObjectId(id)})
+            return self.db[coleccion].find_one({"_id": ObjectId(doc_id)})
         except Exception as e:
             print(f" Error al obtener documento por ID: {e}")
             return None
@@ -144,7 +144,7 @@ class ConexionMongoDB:
         try:
             resultado = self.db[coleccion].update_one(filtro, {"$set": nuevos_datos})
             if resultado.modified_count > 0:
-                print(f" Documento actualizado")
+                print(" Documento actualizado")
                 return True
             else:
                 print("⚠ No se encontró documento para actualizar")
@@ -180,7 +180,7 @@ class ConexionMongoDB:
         try:
             resultado = self.db[coleccion].delete_one(filtro)
             if resultado.deleted_count > 0:
-                print(f" Documento eliminado")
+                print(" Documento eliminado")
                 return True
             else:
                 print("⚠ No se encontró documento para eliminar")

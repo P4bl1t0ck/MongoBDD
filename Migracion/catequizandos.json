@@ -1,0 +1,468 @@
+[
+  {
+    "_id": "CZO001",
+    "nombre": "Mateo",
+    "apellido": "López",
+    "nombre_completo": "Mateo López",
+    "cedula": "1750123456",
+    "fecha_nacimiento": "2015-05-10T00:00:00.000",
+    "edad": 10,
+    "telefono": "0991234567",
+    "correo": "mateo.lopez@estudiante.ec",
+    "direccion": "Av. Los Shyris 234",
+    "nombre_padre": "Carlos López Morales",
+    "nombre_madre": "Patricia Sánchez Vega",
+    "telefono_padres": "0991234567",
+    "padrino": {
+      "nombre": "Roberto López",
+      "telefono": "0991234500",
+      "parroquia_bautismo": "PAR001"
+    },
+    "madrina": {
+      "nombre": "Sandra Morales",
+      "telefono": "0991234501",
+      "parroquia_bautismo": "PAR001"
+    },
+    "parroquia_id": "PAR001",
+    "grupo_id": "GRP2024A",
+    "nivel": "Primera Comunión - Nivel 2",
+    "certificados": [
+      {
+        "tipo": "Bautismo",
+        "fecha": "2015-08-15T00:00:00.000",
+        "parroquia": "PAR001",
+        "libro": "12",
+        "folio": "45",
+        "numero": "123"
+      }
+    ],
+    "sacramentos_recibidos": ["Bautismo"],
+    "fecha_inscripcion": "2024-01-15T00:00:00.000",
+    "observaciones_medicas": "",
+    "activo": true,
+    "notas": "Estudiante aplicado",
+    "fecha_creacion": "2024-01-15T00:00:00.000",
+    "fecha_actualizacion": "2024-01-15T00:00:00.000"
+  },
+  {
+    "_id": "CZO002",
+    "nombre": "Valentina",
+    "apellido": "García",
+    "nombre_completo": "Valentina García",
+    "cedula": "1750123457",
+    "fecha_nacimiento": "2014-08-22T00:00:00.000",
+    "edad": 11,
+    "telefono": "0991234568",
+    "correo": "valentina.garcia@estudiante.ec",
+    "direccion": "Calle Colón 567",
+    "nombre_padre": "Fernando García Torres",
+    "nombre_madre": "María Luisa Pérez",
+    "telefono_padres": "0991234568",
+    "padrino": {
+      "nombre": "Miguel García",
+      "telefono": "0991234510",
+      "parroquia_bautismo": "PAR002"
+    },
+    "madrina": {
+      "nombre": "Ana Pérez",
+      "telefono": "0991234511",
+      "parroquia_bautismo": "PAR002"
+    },
+    "parroquia_id": "PAR001",
+    "grupo_id": "GRP2024A",
+    "nivel": "Primera Comunión - Nivel 2",
+    "certificados": [
+      {
+        "tipo": "Bautismo",
+        "fecha": "2014-11-20T00:00:00.000",
+        "parroquia": "PAR002",
+        "libro": "13",
+        "folio": "67",
+        "numero": "234"
+      }
+    ],
+    "sacramentos_recibidos": ["Bautismo"],
+    "fecha_inscripcion": "2024-01-15T00:00:00.000",
+    "observaciones_medicas": "",
+    "activo": true,
+    "notas": "Muy participativa",
+    "fecha_creacion": "2024-01-15T00:00:00.000",
+    "fecha_actualizacion": "2024-01-15T00:00:00.000"
+  },
+  {
+    "_id": "CZO003",
+    "nombre": "Santiago",
+    "apellido": "Hernández",
+    "nombre_completo": "Santiago Hernández",
+    "cedula": "1750123458",
+    "fecha_nacimiento": "2016-02-14T00:00:00.000",
+    "edad": 9,
+    "telefono": "0991234569",
+    "correo": "santiago.hernandez@estudiante.ec",
+    "direccion": "Av. Amazonas 890",
+    "nombre_padre": "Jorge Hernández Silva",
+    "nombre_madre": "Carmen Rodríguez Vega",
+    "telefono_padres": "0991234569",
+    "padrino": {
+      "nombre": "Luis Hernández",
+      "telefono": "0991234520",
+      "parroquia_bautismo": "PAR001"
+    },
+    "madrina": {
+      "nombre": "Rosa Silva",
+      "telefono": "0991234521",
+      "parroquia_bautismo": "PAR001"
+    },
+    "parroquia_id": "PAR001",
+    "grupo_id": "GRP2024A",
+    "nivel": "Primera Comunión - Nivel 1",
+    "certificados": [
+      {
+        "tipo": "Bautismo",
+        "fecha": "2016-06-10T00:00:00.000",
+        "parroquia": "PAR001",
+        "libro": "14",
+        "folio": "23",
+        "numero": "345"
+      }
+    ],
+    "sacramentos_recibidos": ["Bautismo"],
+    "fecha_inscripcion": "2024-01-20T00:00:00.000",
+    "observaciones_medicas": "Alergia a nueces",
+    "activo": true,
+    "notas": "Necesita refuerzo",
+    "fecha_creacion": "2024-01-20T00:00:00.000",
+    "fecha_actualizacion": "2024-01-20T00:00:00.000"
+  },
+  {
+    "_id": "CZO004",
+    "nombre": "Isabella",
+    "apellido": "Díaz",
+    "nombre_completo": "Isabella Díaz",
+    "cedula": "1750123459",
+    "fecha_nacimiento": "2015-11-30T00:00:00.000",
+    "edad": 10,
+    "telefono": "0991234570",
+    "correo": "isabella.diaz@estudiante.ec",
+    "direccion": "Barrio La Carolina",
+    "nombre_padre": "Andrés Díaz Moreno",
+    "nombre_madre": "Gabriela Fernández López",
+    "telefono_padres": "0991234570",
+    "padrino": {
+      "nombre": "Pablo Díaz",
+      "telefono": "0991234530",
+      "parroquia_bautismo": "PAR003"
+    },
+    "madrina": {
+      "nombre": "Elena Moreno",
+      "telefono": "0991234531",
+      "parroquia_bautismo": "PAR003"
+    },
+    "parroquia_id": "PAR002",
+    "grupo_id": "GRP2024C",
+    "nivel": "Primera Comunión - Nivel 2",
+    "certificados": [
+      {
+        "tipo": "Bautismo",
+        "fecha": "2016-02-28T00:00:00.000",
+        "parroquia": "PAR003",
+        "libro": "15",
+        "folio": "89",
+        "numero": "456"
+      }
+    ],
+    "sacramentos_recibidos": ["Bautismo"],
+    "fecha_inscripcion": "2024-01-20T00:00:00.000",
+    "observaciones_medicas": "",
+    "activo": true,
+    "notas": "Excelente comportamiento",
+    "fecha_creacion": "2024-01-20T00:00:00.000",
+    "fecha_actualizacion": "2024-01-20T00:00:00.000"
+  },
+  {
+    "_id": "CZO005",
+    "nombre": "Sebastián",
+    "apellido": "Torres",
+    "nombre_completo": "Sebastián Torres",
+    "cedula": "1750123460",
+    "fecha_nacimiento": "2014-12-18T00:00:00.000",
+    "edad": 11,
+    "telefono": "0991234571",
+    "correo": "sebastian.torres@estudiante.ec",
+    "direccion": "Calle Venezuela 432",
+    "nombre_padre": "Ricardo Torres Gómez",
+    "nombre_madre": "Lucía Martínez Ruiz",
+    "telefono_padres": "0991234571",
+    "padrino": {
+      "nombre": "Alberto Torres",
+      "telefono": "0991234540",
+      "parroquia_bautismo": "PAR002"
+    },
+    "madrina": {
+      "nombre": "Marta Gómez",
+      "telefono": "0991234541",
+      "parroquia_bautismo": "PAR002"
+    },
+    "parroquia_id": "PAR002",
+    "grupo_id": "GRP2024C",
+    "nivel": "Primera Comunión - Nivel 2",
+    "certificados": [
+      {
+        "tipo": "Bautismo",
+        "fecha": "2014-12-15T00:00:00.000",
+        "parroquia": "PAR002",
+        "libro": "16",
+        "folio": "34",
+        "numero": "567"
+      }
+    ],
+    "sacramentos_recibidos": ["Bautismo"],
+    "fecha_inscripcion": "2024-01-25T00:00:00.000",
+    "observaciones_medicas": "",
+    "activo": true,
+    "notas": "Regular asistencia",
+    "fecha_creacion": "2024-01-25T00:00:00.000",
+    "fecha_actualizacion": "2024-01-25T00:00:00.000"
+  },
+  {
+    "_id": "CZO006",
+    "nombre": "Camila",
+    "apellido": "Flores",
+    "nombre_completo": "Camila Flores",
+    "cedula": "1750123461",
+    "fecha_nacimiento": "2016-06-25T00:00:00.000",
+    "edad": 9,
+    "telefono": "0991234572",
+    "correo": "camila.flores@estudiante.ec",
+    "direccion": "Av. Naciones Unidas 555",
+    "nombre_padre": "Esteban Flores Ruiz",
+    "nombre_madre": "Diana Castro Morales",
+    "telefono_padres": "0991234572",
+    "padrino": {
+      "nombre": "Javier Flores",
+      "telefono": "0991234550",
+      "parroquia_bautismo": "PAR003"
+    },
+    "madrina": {
+      "nombre": "Carla Ruiz",
+      "telefono": "0991234551",
+      "parroquia_bautismo": "PAR003"
+    },
+    "parroquia_id": "PAR003",
+    "grupo_id": "GRP2024E",
+    "nivel": "Primera Comunión - Nivel 1",
+    "certificados": [
+      {
+        "tipo": "Bautismo",
+        "fecha": "2016-09-15T00:00:00.000",
+        "parroquia": "PAR003",
+        "libro": "17",
+        "folio": "12",
+        "numero": "678"
+      }
+    ],
+    "sacramentos_recibidos": ["Bautismo"],
+    "fecha_inscripcion": "2024-01-25T00:00:00.000",
+    "observaciones_medicas": "",
+    "activo": true,
+    "notas": "Muy responsable",
+    "fecha_creacion": "2024-01-25T00:00:00.000",
+    "fecha_actualizacion": "2024-01-25T00:00:00.000"
+  },
+  {
+    "_id": "CZO007",
+    "nombre": "Nicolás",
+    "apellido": "Moreno",
+    "nombre_completo": "Nicolás Moreno",
+    "cedula": "1750123462",
+    "fecha_nacimiento": "2015-09-08T00:00:00.000",
+    "edad": 10,
+    "telefono": "0991234573",
+    "correo": "nicolas.moreno@estudiante.ec",
+    "direccion": "Calle Mejía 678",
+    "nombre_padre": "Héctor Moreno Silva",
+    "nombre_madre": "Valeria Ramírez Castro",
+    "telefono_padres": "0991234573",
+    "padrino": {
+      "nombre": "Diego Moreno",
+      "telefono": "0991234560",
+      "parroquia_bautismo": "PAR001"
+    },
+    "madrina": {
+      "nombre": "Cristina Silva",
+      "telefono": "0991234561",
+      "parroquia_bautismo": "PAR001"
+    },
+    "parroquia_id": "PAR001",
+    "grupo_id": "GRP2024B",
+    "nivel": "Confirmación - Nivel 1",
+    "certificados": [
+      {
+        "tipo": "Bautismo",
+        "fecha": "2015-12-08T00:00:00.000",
+        "parroquia": "PAR001",
+        "libro": "18",
+        "folio": "56",
+        "numero": "789"
+      },
+      {
+        "tipo": "Primera Comunión",
+        "fecha": "2023-05-20T00:00:00.000",
+        "parroquia": "PAR001",
+        "libro": "5",
+        "folio": "23",
+        "numero": "120"
+      }
+    ],
+    "sacramentos_recibidos": ["Bautismo", "Primera Comunión"],
+    "fecha_inscripcion": "2024-02-01T00:00:00.000",
+    "observaciones_medicas": "",
+    "activo": true,
+    "notas": "Buen estudiante",
+    "fecha_creacion": "2024-02-01T00:00:00.000",
+    "fecha_actualizacion": "2024-02-01T00:00:00.000"
+  },
+  {
+    "_id": "CZO008",
+    "nombre": "Sofía",
+    "apellido": "Castro",
+    "nombre_completo": "Sofía Castro",
+    "cedula": "1750123463",
+    "fecha_nacimiento": "2014-03-12T00:00:00.000",
+    "edad": 11,
+    "telefono": "0991234574",
+    "correo": "sofia.castro@estudiante.ec",
+    "direccion": "Av. República 890",
+    "nombre_padre": "Mauricio Castro López",
+    "nombre_madre": "Andrea Vega Morales",
+    "telefono_padres": "0991234574",
+    "padrino": {
+      "nombre": "Raúl Castro",
+      "telefono": "0991234570",
+      "parroquia_bautismo": "PAR002"
+    },
+    "madrina": {
+      "nombre": "Beatriz López",
+      "telefono": "0991234571",
+      "parroquia_bautismo": "PAR002"
+    },
+    "parroquia_id": "PAR002",
+    "grupo_id": "GRP2024D",
+    "nivel": "Confirmación - Nivel 1",
+    "certificados": [
+      {
+        "tipo": "Bautismo",
+        "fecha": "2014-06-15T00:00:00.000",
+        "parroquia": "PAR002",
+        "libro": "19",
+        "folio": "78",
+        "numero": "890"
+      },
+      {
+        "tipo": "Primera Comunión",
+        "fecha": "2022-06-10T00:00:00.000",
+        "parroquia": "PAR002",
+        "libro": "6",
+        "folio": "45",
+        "numero": "230"
+      }
+    ],
+    "sacramentos_recibidos": ["Bautismo", "Primera Comunión"],
+    "fecha_inscripcion": "2024-02-01T00:00:00.000",
+    "observaciones_medicas": "",
+    "activo": true,
+    "notas": "Excelente participación",
+    "fecha_creacion": "2024-02-01T00:00:00.000",
+    "fecha_actualizacion": "2024-02-01T00:00:00.000"
+  },
+  {
+    "_id": "CZO009",
+    "nombre": "Lucas",
+    "apellido": "Romero",
+    "nombre_completo": "Lucas Romero",
+    "cedula": "1750123464",
+    "fecha_nacimiento": "2015-07-20T00:00:00.000",
+    "edad": 10,
+    "telefono": "0991234575",
+    "correo": "lucas.romero@estudiante.ec",
+    "direccion": "Barrio San Juan 123",
+    "nombre_padre": "Alejandro Romero Díaz",
+    "nombre_madre": "Paola Guerrero Silva",
+    "telefono_padres": "0991234575",
+    "padrino": {
+      "nombre": "Sergio Romero",
+      "telefono": "0991234580",
+      "parroquia_bautismo": "PAR001"
+    },
+    "madrina": {
+      "nombre": "Laura Díaz",
+      "telefono": "0991234581",
+      "parroquia_bautismo": "PAR001"
+    },
+    "parroquia_id": "PAR001",
+    "grupo_id": "GRP2024A",
+    "nivel": "Primera Comunión - Nivel 2",
+    "certificados": [
+      {
+        "tipo": "Bautismo",
+        "fecha": "2015-10-20T00:00:00.000",
+        "parroquia": "PAR001",
+        "libro": "20",
+        "folio": "90",
+        "numero": "901"
+      }
+    ],
+    "sacramentos_recibidos": ["Bautismo"],
+    "fecha_inscripcion": "2024-02-05T00:00:00.000",
+    "observaciones_medicas": "",
+    "activo": true,
+    "notas": "Necesita motivación",
+    "fecha_creacion": "2024-02-05T00:00:00.000",
+    "fecha_actualizacion": "2024-02-05T00:00:00.000"
+  },
+  {
+    "_id": "CZO010",
+    "nombre": "Emma",
+    "apellido": "Vargas",
+    "nombre_completo": "Emma Vargas",
+    "cedula": "1750123465",
+    "fecha_nacimiento": "2016-01-15T00:00:00.000",
+    "edad": 10,
+    "telefono": "0991234576",
+    "correo": "emma.vargas@estudiante.ec",
+    "direccion": "Calle Bolívar 456",
+    "nombre_padre": "Cristian Vargas Pérez",
+    "nombre_madre": "Mónica Jiménez Ruiz",
+    "telefono_padres": "0991234576",
+    "padrino": {
+      "nombre": "Eduardo Vargas",
+      "telefono": "0991234590",
+      "parroquia_bautismo": "PAR002"
+    },
+    "madrina": {
+      "nombre": "Patricia Pérez",
+      "telefono": "0991234591",
+      "parroquia_bautismo": "PAR002"
+    },
+    "parroquia_id": "PAR002",
+    "grupo_id": "GRP2024C",
+    "nivel": "Primera Comunión - Nivel 1",
+    "certificados": [
+      {
+        "tipo": "Bautismo",
+        "fecha": "2016-04-15T00:00:00.000",
+        "parroquia": "PAR002",
+        "libro": "21",
+        "folio": "34",
+        "numero": "012"
+      }
+    ],
+    "sacramentos_recibidos": ["Bautismo"],
+    "fecha_inscripcion": "2024-02-05T00:00:00.000",
+    "observaciones_medicas": "",
+    "activo": true,
+    "notas": "Muy dedicada",
+    "fecha_creacion": "2024-02-05T00:00:00.000",
+    "fecha_actualizacion": "2024-02-05T00:00:00.000"
+  }
+]
